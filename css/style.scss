@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+html
+{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.bgSymbols
+{
+    z-index: -4;
+    position: absolute;
+    top:10vh;
+    right:10vw;
+    & .circle
+    {
+        & i:nth-child(1)
+        {
+            color: aqua;
+            font-size: 5em;
+            animation-name: cir;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        & i:nth-child(2)
+        {
+            font-weight: 600;
+            animation-delay: 2s;
+            animation-name: cir;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            color: rgb(225, 57, 231);
+            font-size: 1.8em;
+        }
+
+    }
+}
+@keyframes cir
+{
+    0%
+    {
+        color: aqua;
+            
+    }
+    25%
+    {
+        color: rgb(253, 66, 97);
+    }
+    50%
+    {
+        color: rgb(0, 42, 158);
+    }
+    75%
+    {
+        opacity: .5;
+        color: aqua;
+    }
+    100%
+    {
+        color: aqua;
+    }
+}
+.body-prop
+{
+    color: white;
+    background:black;
+}
+.bgImage
+{
+    z-index: -1;
+    opacity: .5;
+}
+.bg-img-1
+{
+    overflow: hidden;
+    height:93vh;
+}
+.header
+{
+.logo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-family:Pacifico;
+} 
+.gmail-container
+{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   & .gmail
+    {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    &:hover
+    {
+        transition: 1s;
+        opacity: .6;
+    }
+    & i
+    {
+        padding-right: 5px;
+        color: rgb(253, 66, 97);
+    }
+    }
+}
+}
+.main .description
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+    & h1 
+    {
+        font-family: serif;
+        font-size: 4em;
+        & span
+        {font-family: cursive;
+            color:rgb(253, 66, 97);
+        }
+    }
+    & h5 
+    {
+        font-family: monospace;
+        font-size: 1.8em;
+        opacity: 0.5;
+    }
+    .download-cv
+    {
+        padding-top: 1.7em;
+        & a
+        {
+            background: rgb(20, 20, 20);
+            color: white;
+            padding: 1em;
+            border-radius: 25px;
+            text-decoration: none;
+            border: none;
+            box-shadow: -5px -5px  12px rgb(29, 28, 28),
+                -3px -3px  8px rgba(24, 23, 23, 0.5),
+                inset 2px 2px  12px rgba(32, 32, 32, 0.5),
+                2px 2px  12px rgba(36, 35, 35, 0.8);
+                &:hover 
+            {
+                box-shadow:inset -5px -5px  12px rgb(29, 28, 28),
+                -3px -3px  8px rgba(24, 23, 23, 0.5),
+                inset 2px 2px  12px rgba(32, 32, 32, 0.5),
+                2px 2px  12px rgba(36, 35, 35, 0.1);
+                & span{
+                    display: inline-block;
+                    transform: scale(.95);
+                    opacity:.7;
+                }
+            }   
+        }
+    }
+}
+.about-sec
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+     line-height: 1.8em;
+    & .about
+    {
+        & span
+        {
+            color: rgb(253, 66, 97);
+        }
+    }
+    
+        & .sec-2
+        {
+            text-align: justify;
+            opacity: .6;
+        }
+}
+.social-media
+{
+    position: absolute;
+    top:80vh;
+    left: 10px;
+    font-size: 1.6em;
+    & .logo
+    {
+        color: white;
+        &:hover
+        {
+            opacity: .5;
+        }
+    }
+}
+@media(max-width:992px)
+{
+ .main
+ {
+     & .description .div
+     {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+     }
+     & .bg-img-1
+     {
+           display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        
+     }
+     & .about-sec
+     {
+                    display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+     }
+ }   
+ .bgSymbols
+{
+    z-index: -4;
+    position: absolute;
+    top:2vh;
+    right:3vw;
+    
+}
+}
